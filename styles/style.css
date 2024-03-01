@@ -1,0 +1,48 @@
+header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+header nav {
+    margin-right: 20px;
+}
+header nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 20px;
+}
+
+.content {
+    display: flex;
+}
+
+.content .sidebar{
+    padding: 30px 70px;
+    max-width: 500px;
+    background-color: aqua;
+}
+
+
+h1 {
+    color: aqua;
+}
+
+table td {
+    padding: 25px;
+
+}
+table tr {
+    margin-bottom: 15px;
+}
+.content .DisplayContent {
+    width: 65%;
+    padding: 25px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    margin: 20px;
+}

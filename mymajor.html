@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ryan Woolf</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html">
+        <div class="logo"><img src="images/athletic-reverse.png" alt="Logo" class="Logo"></div>
+    </a>
+
+    <nav>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a class="nav-link active" href="index.html"> Index</a></li>
+            <li class="nav-item"><a class="nav-link active" href="resume.html"> Resume</a></li>
+            <li class="nav-item"><a class="nav-link active" href="mymajor.html"> MyMajor</a></li>
+            <li class="nav-item"><a class="nav-link active" href="clubs.html"> Clubs</a></li>
+            <li class="nav-item"><a class="nav-link active" href="album.html"> Album</a></li>
+            <li class="nav-item"><a class="nav-link active" href="weblinks.html"> Links</a></li>
+        </ul>
+    </nav>
+</header>
+<br>
+<div class="content">
+    <div class="sidebar">
+        <br>
+        <h2>Contact Me</h2>
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xgegkbpl}" method="post">
+            <fieldset id="fs-frm-inputs">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" class="form-control" name="name" id="full-name" placeholder="First and Last" required="">
+                </div>
+                <div class="form-group">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" class="form-control" name="_replyto" id="email-address" placeholder="sample@email.com" required="">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" rows="5" name="message" id="message" placeholder="Your Message"></textarea>
+                </div>
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <hr>
+
+        <div id="apiDisplay"></div>
+
+        <script>
+            const div = document.getElementById('apiDisplay');
+            const url = 'https://icanhazdadjoke.com/';
+
+            const headers = new Headers({
+                'Accept': 'application/json'
+            });
+
+            fetch(url, {headers})
+                .then((response) => {
+                    return response.json();
+                })
+                .then((data) => {
+                    console.log(data);
+                    let p = document.createElement('p');
+                    p.innerHTML = `${data.joke}`;
+                    div.appendChild(p);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+
+        </script>
+    </div>
+
+    <div class="DisplayContent">
+        <h1>Education</h1>
+        <br>
+        <h3>Pennsylvania State University, University Park, PA</h3>
+        <h4>Intended B.S in Cyber Security Analytics and Operations</h4>
+        <p>
+            August 2022 - May 2026
+            GPA- 3.42/4.0
+            Cybersecurity is a field that deals with the protection of computer systems, networks, programs, and data
+            from attacks and unauthorized access. This includes the development of cyber defense tools to protect
+            critical infrastructure as well as the analysis and mitigation of cyber threats.
+        </p>
+        <br>
+        <h3>Lower Dauphin High School, Hummelstown, PA</h3>
+        <h4> High School Diploma</h4>
+        <p>
+            August 2018 - June 2022
+            Cumulative GPA - 3.5
+        </p>
+    </div>
+</div>
+
+<footer>
+    <a href="https://www.linkedin.com/in/ryan-woolf-3478b026b/">LinkedIn</a>
+    <a href="https://github.com/RCW5414">GitHub</a>
+    <p>Ryan Woolf <br>520 E Calder Way, State College, PA 16801 <br> (717) 693-8400 <br>ryanw6610@gmail.com<br></p>
+    <p>&copy; Copyright 2024</p>
+</footer>
+</body>
+</html>
