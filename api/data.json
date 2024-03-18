@@ -4,20 +4,20 @@
     "date": "Developed Fall 2023",
     "description": "Created for IST 256 class",
     "repoLink": "https://rcw5414.github.io/mysite/hometown.html",
-    "mediaLink": "/images/Home Town.png"
+    "mediaLink": "images/Home Town.png"
   },
   {
     "title": "See My Photo Album",
     "date": "Developed Fall 2023",
     "description": "Created for IST 256 class",
     "repoLink": "https://rcw5414.github.io/mysite/gallery.html",
-    "mediaLink": "/images/Third.png"
+    "mediaLink": "images/Third.png"
   },
   {
     "title": "See My HomePage",
     "date": "Developed Fall 2023",
     "description": "Created for IST 256 class",
     "repoLink": "https://rcw5414.github.io/mysite/index.html",
-    "mediaLink": "/images/Home Page.png"
+    "mediaLink": "images/Home Page.png"
   }
 ]
