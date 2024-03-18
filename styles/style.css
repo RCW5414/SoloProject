@@ -19,12 +19,12 @@ header nav li {
 .content .sidebar{
     padding: 30px 70px;
     max-width: 500px;
-    background-color: aqua;
+    background-color: lightsteelblue;
 }
 
 
 h1 {
-    color: aqua;
+    color:  lightsteelblue;
 }
 
 table td {
